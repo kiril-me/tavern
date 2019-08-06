@@ -107,3 +107,7 @@ class InvalidQueryResultTypeError(TavernException):
 
 class UnexpectedDocumentsError(TavernException):
     """Multiple documents were found in a YAML file when only one was expected"""
+
+
+class InvalidConfigurationException(TavernException):
+    """A configuration value (from the cli or the ini file) was invalid"""
